@@ -1,16 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RatingModule } from 'ng-starrating';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/partials/header/header.component';
+import { HomeComponent } from './components/view/home/home.component';
+import { SearchComponent } from './components/partials/search/search.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
+import { FoodPageComponent } from './components/view/food-page/food-page.component';
+import { CartPageComponent } from './components/view/cart-page/cart-page.component';
+import { TitleComponent } from './components/partials/title/title.component';
+import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    SearchComponent,
+    TagsComponent,
+    FoodPageComponent,
+    CartPageComponent,
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
